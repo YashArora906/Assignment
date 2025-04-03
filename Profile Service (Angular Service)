@@ -1,0 +1,15 @@
+@Injectable({
+  providedIn: 'root'
+})
+export class ProfileService {
+  private profiles: Profile[] = [];
+
+  constructor() { }
+
+  getProfiles(): Observable<Profile[]> {
+    // Simulated API call or local storage retrieval
+    return of(this.profiles);
+  }
+
+  // Other CRUD operations
+}
