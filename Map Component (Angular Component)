@@ -1,0 +1,14 @@
+@Component({
+  selector: 'app-map',
+  templateUrl: './map.component.html',
+  styleUrls: ['./map.component.css']
+})
+export class MapComponent implements OnInit {
+  @Input() addresses: string[] = [];
+
+  constructor() { }
+
+  ngOnInit(): void {
+    // Initialize map and markers using a map service
+  }
+}
